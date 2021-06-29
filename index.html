@@ -5,15 +5,14 @@
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
         <div class="maindiv>"
-        <form>
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="range"  id="rate" min=1 max=20 value=0.25>
+        <h1>Simple Interest Calculator</h1>
+        Amount         <input type="number"  id="principal">  <br/>
+        Interest Rate  <input type="range" onchange="updateRate()" id="rate" min=1 max=20 value=0.25>
         <span id="rate_val">
             10.25%
         </span>  <br/>
-        No. of Years <select id="years">
+        No. of Years    <select id="years">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -28,12 +27,8 @@
                         <option value="12">12</option>    
                     </select>
                       <br/>
-        Interest : <span id="result"></span><br>
-
         <button onclick="compute()">Compute interest</button>
-        <span id="result">
-        </span>
-        </form>
+        <span id="result"></span><br>
         </div>
         <footer>
         &#169; This Calculator belongs to --Hemraj Swami--
