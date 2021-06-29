@@ -5,9 +5,9 @@
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
-        </br>
         <div class="maindiv">
+            <h1>Simple Interest Calculator</h1>
+        </br>
         Amount         <input type="number"  id="principal">  <br/>
         Interest Rate  <input type="range" onchange="updateRate()" id="rate" min=1 max=20 value=0.25>
         <span id="rate_val">
@@ -30,13 +30,12 @@
                     </select>
                       <br/>
 
-        <button onclick="compute()">Compute Interest</button>
-        <span id="result"> 
-            
-        </span><br>
-
+                    <button onclick="compute()">Compute Interest</button>
+                    <span id="result"> 
+              
+                    </span></br>
         </div>
-    </br>
+        </br>
 
         <footer>
         &#169; This Calculator belongs to --Hemraj Swami--
